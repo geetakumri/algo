@@ -1,4 +1,4 @@
-def max_min_time(time_input):
+def max_time(time_input):
     hh1 = time_input[0]
     hh2 = time_input[1]
     mm1 = time_input[3]
@@ -23,8 +23,28 @@ def max_min_time(time_input):
         else:
             hh1 = '1'
 
-    str1 = hh1 + hh2 + ":" + mm1 + mm2
-    print(str1)
+    time_max = hh1 + hh2 + ":" + mm1 + mm2
+    print("Max time is : {} ", format(time_max))
 
 
-max_min_time('2?:20')
+max_time('2?:20')
+
+
+def min_time(time_input):
+    hh1 = time_input[0]
+    hh2 = time_input[1]
+    mm1 = time_input[3]
+    mm2 = time_input[4]
+    if hh1 == '?':
+        hh1 = '0'
+    if hh2 == '?':
+        hh2 = '0'
+    if mm1 == '?':
+        mm1 = '0'
+    if mm2 == '?':
+        mm2 = '0'
+    time_min = hh1 + hh2 + ":" + mm1 + mm2
+    print("Max time is : {} ", format(time_min))
+
+
+min_time('??:?0')

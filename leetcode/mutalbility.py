@@ -15,4 +15,3 @@ print(id(friends))
 # is is used to compare ids
 # add_balance(*t) - unpacking same as add_balance(t[0],t[1])
 # obj =[User(**data) for data in users] -> dictionary unpacking
-

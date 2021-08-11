@@ -45,6 +45,9 @@ class LinkedList:
                 break
             temp = temp.next
 
+    def delete_first(self):
+        temp = self.head
+        
 
 if __name__ == '__main__':
     ll = LinkedList()
@@ -58,3 +61,5 @@ if __name__ == '__main__':
 
     ll.add_all("geeta", "saurav", "puchu")
     ll.printList()
+
+    ll.delete_first()

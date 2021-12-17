@@ -22,8 +22,12 @@ class Solution:
                     maxi = max(maxi, key)
             return maxi
 
+
+
+
         def findLucky(self, arr: List[int]) -> int:
             return max(i if arr.count(i) == i else -1 for i in arr)
 
 a = Solution()
 print(a.findLucky([2, 2, 1, 3]))
+

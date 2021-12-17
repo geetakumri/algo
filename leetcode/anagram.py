@@ -1,3 +1,5 @@
+from collections import Counter
+
 def anagram(s1,s2):
     char_and_its_count ={}
     for i in s1:
@@ -19,11 +21,13 @@ def anagram(s1,s2):
     return True
 
 
-    
+def is_anagram(word1,word2):
+    return Counter(word1)==Counter(word2)
 
+word1 = 'ahbgrettf'
+word2 = 'arethbfgt'
+
+print(is_anagram(word1,word2))
     
 print(anagram('gee','eeg'))
 print(anagram('god','eeg'))
-
-
-
